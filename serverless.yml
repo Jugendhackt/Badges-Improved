@@ -22,6 +22,8 @@ service: jh-badge-generator
 provider:
   name: aws
   runtime: nodejs10.x
+  profile: ${env:AWS_PROFILE}
+  region: eu-central-1
 
 # you can overwrite defaults here
 #  stage: dev
