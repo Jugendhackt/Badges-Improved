@@ -4,6 +4,8 @@
 **A simple badge generator for READMEs of projects created at Jugend hackt events.**
 
 ## Usage
+**A simple badge builder for creating the badge can be found [here](https://jhbadge.com/builder)** (https://jhbadge.com/builder)**.**
+
 The generator can be found at `https://jhbadge.com`.
 The standard badge without any further parameters looks like this:
 
