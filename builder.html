@@ -57,8 +57,8 @@
                 var year = document.querySelector("#year").value;
                 var event = document.querySelector("#event").value;
                 var hideYear = document.querySelector("#noyear").checked;
-                document.querySelector("#url").innerHTML = "https://jhbadge.com/?year=" + year + "&evt=" + event + (hideYear) ? "&noyear=true" : "";
-                document.querySelector("#image").src = "https://jhbadge.com/?year=" + year + "&evt=" + event + (hideYear) ? "&noyear=true" : "";
+                document.querySelector("#url").innerHTML = "https://jhbadge.com/?year=" + year + "&evt=" + event + ((hideYear) ? "&noyear=true" : "");
+                document.querySelector("#image").src = "https://jhbadge.com/?year=" + year + "&evt=" + event + ((hideYear) ? "&noyear=true" : "");
             };
         </script>
     </body>
