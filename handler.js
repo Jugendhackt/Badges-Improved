@@ -93,7 +93,7 @@ module.exports.queryBadgeGenerator = async event => {
     if(event.queryStringParameters["noyear"]){
       if(event.queryStringParameters["noyear"] == "true") {
         evtYear = ""
-        viewWidth -= 8
+        viewWidth -= 32
       } else {
         if(event.queryStringParameters["year"]) {
           if(!isNaN(event.queryStringParameters["year"])) evtYear = event.queryStringParameters["year"]
