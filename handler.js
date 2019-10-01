@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports.badgeGenerator = async event => {
+module.exports.queryBadgeGenerator = async event => {
 
   let viewWidth, evtAbbr, evtLong, evtColor, evtYear
 

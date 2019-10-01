@@ -59,8 +59,8 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  badgeGenerator:
-    handler: handler.badgeGenerator
+  queryBadgeGenerator:
+    handler: handler.queryBadgeGenerator
     events:
       - http:
           path: /
