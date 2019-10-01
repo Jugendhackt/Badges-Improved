@@ -17,6 +17,18 @@ https://jhbadge.com/?year=2019&evt=ffm
 ```
 [![Badge](https://jhbadge.com/?year=2019&evt=ffm)](https://jhbadge.com/?year=2019&evt=ffm)
 
+The year can also be hidden if the `noyear` GET parameter is set to `true`.
+```
+https://jhbadge.com/?evt=ffm&noyear=true
+```
+[![Badge](https://jhbadge.com/?evt=ffm&noyear=true)](https://jhbadge.com/?evt=ffm&noyear=true)
+
+The simplest variant of the badge therefore looks like this (without event and without year):
+```
+https://jhbadge.com/?noyear=true
+```
+[![Badge](https://jhbadge.com/?noyear=true)](https://jhbadge.com/?noyear=true)
+
 The following events are currently supported in abbreviated form:
 - `ffm` - Frankfurt
 - `ber` - Berlin
