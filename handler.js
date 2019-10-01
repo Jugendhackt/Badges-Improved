@@ -107,8 +107,10 @@ module.exports.queryBadgeGenerator = async event => {
     body: `
       <svg xmlns="http://www.w3.org/2000/svg" width="${viewWidth}" height="20" viewBox="0 0 ${viewWidth} 20">
         <!--
-          !!! This generator was originally developed by Niklas Schroetler. https://nschroetler.de !!!
-          !!! Performance and stability adjustments as well as conversion to serverless by Marvin Schopf. https://marvinschopf.com !!!
+          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+          !!  This generator was originally developed by Niklas Schroetler. https://nschroetler.de                                 !!
+          !!  Performance and stability adjustments as well as conversion to serverless by Marvin Schopf. https://marvinschopf.com !!
+          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         -->
         <a href="https://jugendhackt.org">
           <title>JH${evtAbbr} Badge</title>
