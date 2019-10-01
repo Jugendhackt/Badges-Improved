@@ -110,6 +110,7 @@ module.exports.queryBadgeGenerator = async event => {
           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
           !!  This generator was originally developed by Niklas Schroetler. https://nschroetler.de                                 !!
           !!  Performance and stability adjustments as well as conversion to serverless by Marvin Schopf. https://marvinschopf.com !!
+          !!  Github repo: https://github.com/Jugendhackt/Badges-Improved                                                                                                                     !!
           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         -->
         <a href="https://jugendhackt.org">
