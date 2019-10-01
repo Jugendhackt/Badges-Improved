@@ -71,6 +71,12 @@ functions:
       - http:
           path: /builder
           method: get
+  redirectBuilder:
+    handler: builder.redirect
+    events:
+      - http:
+          path: /builder~
+          method: get
   status:
     handler: status.handler
     events:
