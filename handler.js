@@ -5,7 +5,10 @@ module.exports.queryBadgeGenerator = async event => {
   let viewWidth, evtAbbr, evtLong, evtColor, evtYear = new Date().getFullYear()
 
   if(event.queryStringParameters) {
-    if(event.queryStringParameters["year"]) {
+    if(event.queryStringParameters["noyear"]) if(event.queryStringParameters["noyear"] == "true") {
+      evtYear = ""
+      viewWidth -= 8
+    } else if(event.queryStringParameters["year"]) {
       if(!isNaN(event.queryStringParameters["year"])) evtYear = event.queryStringParameters["year"]
       else evtYear = "err"
     } else evtYear = new Date().getFullYear()
@@ -97,11 +100,6 @@ module.exports.queryBadgeGenerator = async event => {
     evtAbbr = ""
     evtLong = ""
     evtColor = "#2aabe1"
-  }
-
-  if(event.queryStringParameters && event.queryStringParameters["noyear"] && event.queryStringParameters["noyear"] == true) {
-    evtYear = ""
-    viewWidth -= 8;
   }
 
   return {
