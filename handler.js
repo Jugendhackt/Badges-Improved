@@ -4,6 +4,7 @@ module.exports.queryBadgeGenerator = async event => {
 
   let viewWidth, evtAbbr, evtLong, evtColor, evtYear = new Date().getFullYear()
 
+  // TODO Simplify the query of the following IF loops into single-line loops 
   if(event.queryStringParameters) {
     if(event.queryStringParameters["noyear"]){
       if(event.queryStringParameters["noyear"] == "true") {
