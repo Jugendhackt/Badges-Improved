@@ -1,5 +1,5 @@
 # Badges-Improved
-[![Jugendhackt](https://jhbadge.com/?evt=ffm&year=2019)](https.//jugendhackt.org)
+[![Jugendhackt](https://jhbadge.com/?noyear=true)](https.//jugendhackt.org)
 
 **A simple badge generator for READMEs of projects created at Jugend hackt events.**
 
