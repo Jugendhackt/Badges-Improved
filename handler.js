@@ -5,13 +5,22 @@ module.exports.queryBadgeGenerator = async event => {
   let viewWidth, evtAbbr, evtLong, evtColor, evtYear = new Date().getFullYear()
 
   if(event.queryStringParameters) {
-    if(event.queryStringParameters["noyear"]) if(event.queryStringParameters["noyear"] == "true") {
-      evtYear = ""
-      viewWidth -= 8
-    } else if(event.queryStringParameters["year"]) {
-      if(!isNaN(event.queryStringParameters["year"])) evtYear = event.queryStringParameters["year"]
-      else evtYear = "err"
-    } else evtYear = new Date().getFullYear()
+    if(event.queryStringParameters["noyear"]){
+      if(event.queryStringParameters["noyear"] == "true") {
+        evtYear = ""
+        viewWidth -= 8
+      } else {
+        if(event.queryStringParameters["year"]) {
+          if(!isNaN(event.queryStringParameters["year"])) evtYear = event.queryStringParameters["year"]
+          else evtYear = "err"
+        } else evtYear = new Date().getFullYear()
+      }
+    } else {
+      if(event.queryStringParameters["year"]) {
+        if(!isNaN(event.queryStringParameters["year"])) evtYear = event.queryStringParameters["year"]
+        else evtYear = "err"
+      } else evtYear = new Date().getFullYear()
+    }
     if(event.queryStringParameters["evt"]) evtAbbr = event.queryStringParameters["evt"]
     if(event.queryStringParameters["event"]) evtAbbr = event.queryStringParameters["event"]
     if(evtAbbr) {
