@@ -6,6 +6,7 @@
 ## Usage
 The generator can be found at `https://jhbadge.com`.
 The standard badge without any further parameters looks like this:
+
 [![Badge](https://jhbadge.com)](https://jhbadge.com)
 
 The year and the event can also be specified in the form of GET parameters:
