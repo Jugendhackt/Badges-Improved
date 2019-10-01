@@ -8,6 +8,6 @@ module.exports.handler = async event => {
         headers: {
             "Content-Type": "text/html"
         },
-        body: fs.readFileSync("builder.html", "utf8")
+        body: fs.readFileSync("builder.min.html", "utf8")
     }
 };
