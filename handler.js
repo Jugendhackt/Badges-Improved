@@ -92,6 +92,10 @@ module.exports.queryBadgeGenerator = async event => {
       evtLong = ""
       evtColor = "#2aabe1"
     }
+    if(event.queryStringParameters["noyear"] && event.queryStringParameters["noyear"]==true) {
+      evtYear = ""
+      viewWidth -= 8;
+    }
   } else {
     viewWidth = 195
     evtAbbr = ""
