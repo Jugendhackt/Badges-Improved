@@ -6,22 +6,6 @@ module.exports.queryBadgeGenerator = async event => {
 
   // TODO Simplify the query of the following IF loops into single-line loops 
   if(event.queryStringParameters) {
-    if(event.queryStringParameters["noyear"]){
-      if(event.queryStringParameters["noyear"] == "true") {
-        evtYear = ""
-        viewWidth -= 8
-      } else {
-        if(event.queryStringParameters["year"]) {
-          if(!isNaN(event.queryStringParameters["year"])) evtYear = event.queryStringParameters["year"]
-          else evtYear = "err"
-        } else evtYear = new Date().getFullYear()
-      }
-    } else {
-      if(event.queryStringParameters["year"]) {
-        if(!isNaN(event.queryStringParameters["year"])) evtYear = event.queryStringParameters["year"]
-        else evtYear = "err"
-      } else evtYear = new Date().getFullYear()
-    }
     if(event.queryStringParameters["evt"]) evtAbbr = event.queryStringParameters["evt"]
     if(event.queryStringParameters["event"]) evtAbbr = event.queryStringParameters["event"]
     if(evtAbbr) {
@@ -104,6 +88,23 @@ module.exports.queryBadgeGenerator = async event => {
       evtAbbr = ""
       evtLong = ""
       evtColor = "#2aabe1"
+    }
+    // TODO Simplify the query of the following IF loops into single-line loops 
+    if(event.queryStringParameters["noyear"]){
+      if(event.queryStringParameters["noyear"] == "true") {
+        evtYear = ""
+        viewWidth -= 8
+      } else {
+        if(event.queryStringParameters["year"]) {
+          if(!isNaN(event.queryStringParameters["year"])) evtYear = event.queryStringParameters["year"]
+          else evtYear = "err"
+        } else evtYear = new Date().getFullYear()
+      }
+    } else {
+      if(event.queryStringParameters["year"]) {
+        if(!isNaN(event.queryStringParameters["year"])) evtYear = event.queryStringParameters["year"]
+        else evtYear = "err"
+      } else evtYear = new Date().getFullYear()
     }
   } else {
     viewWidth = 195
