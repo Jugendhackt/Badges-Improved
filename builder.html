@@ -32,7 +32,7 @@
                     <option value="ch">Schweiz</option>
                 </select><br>
                 <label for="year">Year:</label><br>
-                <input type="number" id="year" oninput="javascript:handleFormSubmit();"><br>
+                <input type="number" id="year" min="2013" max="" oninput="javascript:handleFormSubmit();"><br>
             </form>
             <p>
                 <b>URL:</b><br>
@@ -52,6 +52,7 @@
             </p>
         </div>
         <script type="application/javascript">
+        document.querySelector('#year').setAttribute('max',new Date().getFullYear());
             function handleFormSubmit() {
                 var year = document.getElementById("year").value;
                 var event = document.getElementById("event").value;
