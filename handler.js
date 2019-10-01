@@ -2,7 +2,11 @@
 
 module.exports.queryBadgeGenerator = async event => {
 
-  let viewWidth, evtAbbr, evtLong, evtColor, evtYear
+  let evtYear
+  let viewWidth = 195
+  let evtAbbr = ""
+  let evtLong = ""
+  let evtColor = "#2aabe1"
 
   if(event.queryStringParameters) {
     if(event.queryStringParameters["year"]) {
@@ -86,6 +90,11 @@ module.exports.queryBadgeGenerator = async event => {
           evtColor = "#2aabe1"
           break
       }
+    } else {
+      viewWidth = 195
+      evtAbbr = ""
+      evtLong = ""
+      evtColor = "#2aabe1"
     }
   } else {
     viewWidth = 195
