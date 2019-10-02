@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports.queryBadgeGenerator = async event => {
+module.exports.handler = async event => {
 
   let viewWidth, evtAbbr, evtLong, evtColor, evtYear = new Date().getFullYear()
 

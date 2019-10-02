@@ -60,7 +60,7 @@ provider:
 
 functions:
   queryBadgeGenerator:
-    handler: handler.queryBadgeGenerator
+    handler: handler.handler
     events:
       - http:
           path: /
