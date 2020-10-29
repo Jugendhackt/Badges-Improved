@@ -76,6 +76,12 @@ module.exports.handler = async event => {
           evtLong = "Asia"
           evtColor = "#FFD000"
           break
+        case "rem":
+          viewWidth = 243
+          evtAbbr = "REM"
+          evtLong = "Remote"
+          evtColor = "#00498D"
+          break
         default:
           viewWidth = 195
           evtAbbr = ""

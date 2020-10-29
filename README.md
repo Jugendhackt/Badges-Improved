@@ -41,6 +41,7 @@ The following events are currently supported in abbreviated form:
 - `mv` - Mecklenburg-Vorpommern
 - `ulm` - Ulm
 - `asia` - Asia
+- `rem` - Remote
 
 ## Reliability
 The generator should be very reliable, because the domain is registered for five years and the generator itself runs on serverless and therefore automatically scaling infrastructure.
